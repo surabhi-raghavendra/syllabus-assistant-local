@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the minimum attendance requirement?",
+    "expected_answer": "75%",
+    "expected_page": 2
+  },
+  {
+    "question": "How much is CIA 1 worth?",
+    "expected_answer": "20%",
+    "expected_page": 3
+  },
+  {
+    "question": "How many marks is the end semester examination?",
+    "expected_answer": "50%",
+    "expected_page": 3
+  },
+  {
+    "question": "Can I write a makeup exam if I miss a CIA?",
+    "expected_answer": "Only for a medical emergency or university-approved event, with documentation submitted within 3 working days.",
+    "expected_page": 4
+  },
+  {
+    "question": "What happens if I miss two CIA exams?",
+    "expected_answer": "Zero marks for those components; may not be eligible to pass the course.",
+    "expected_page": 4
+  },
+  {
+    "question": "When is the end semester examination?",
+    "expected_answer": "5 to 15 December",
+    "expected_page": 5
+  },
+  {
+    "question": "What is the grading scheme?",
+    "expected_answer": "O: 90-100, A+: 80-89, A: 70-79, B+: 60-69, B: 50-59, F: below 50",
+    "expected_page": 6
+  },
+  {
+    "question": "What score do I need for an A grade?",
+    "expected_answer": "70 to 79 marks",
+    "expected_page": 6
+  },
+  {
+    "question": "Can students below 65% attendance write the final exam?",
+    "expected_answer": "No, they will not be permitted to write the End Semester Examination.",
+    "expected_page": 2
+  },
+  {
+    "question": "What is the course credit value and who teaches ethics?",
+    "expected_answer": "Credits: 4. The syllabus does not mention who teaches ethics, so the assistant should say it could not find that information.",
+    "expected_page": 1
+  }
+]
