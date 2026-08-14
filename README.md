@@ -36,3 +36,5 @@ For structured academic policy questions, the system also generates a visual sum
 
 ## Architecture
 ![System Architecture](docs/architecture.png)
+## Workflow
+![Application Workflow](docs/workflow.png)
