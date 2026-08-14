@@ -55,6 +55,21 @@ For structured academic policy questions, the system also generates a visual sum
 8. For structured academic policy questions, the application also generates a visual using local Stable Diffusion through AUTOMATIC1111.
 9. The text answer and generated visual are displayed together in the Streamlit interface.
 ---
+## Screenshots
+### Application Interface
+![Application Interface](docs/screenshots/01_home.png)
+
+### Syllabus Upload
+![Syllabus Upload](docs/screenshots/02_upload%20syllabus.png)
+
+### Text Answer
+![Text Answer](docs/screenshots/03_text_answer.png)
+
+### Generated Visual
+![Generated Visual](docs/screenshots/04_text_answer.png)
+
+### Additional Application Output
+![Application Output](docs/screenshots/05_text_answer.png)
 
 ## Architecture
 ![System Architecture](docs/architecture.png)
