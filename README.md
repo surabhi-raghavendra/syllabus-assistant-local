@@ -77,6 +77,7 @@ For structured academic policy questions, the system also generates a visual sum
 ![Application Output](docs/screenshots/05_text_answer.png)
 
 ## Evaluation
+
 The project includes an evaluation component for testing syllabus retrieval and answer quality.
 
 ```text
@@ -85,6 +86,7 @@ evaluation/
 └── test_questions.json
 
 ## Limitations
+
 - Stable Diffusion generation can be slow on CPU-only systems.
 - Image-generation models may not reliably render exact textual information or numerical values.
 - Answer quality depends on the quality and structure of the uploaded syllabus.
@@ -92,6 +94,7 @@ evaluation/
 - Generated visuals are supplementary summaries; the syllabus-grounded textual answer remains the primary source of factual information.
 
 ## Future Improvements
+
 - Support multiple syllabus documents simultaneously.
 - Add richer page-level source highlighting.
 - Improve visual generation using structured templates for exact academic data.
