@@ -85,6 +85,9 @@ evaluation/
 ├── evaluate.py
 └── test_questions.json
 
+```text
+
+```text
 ## Limitations
 
 - Stable Diffusion generation can be slow on CPU-only systems.
