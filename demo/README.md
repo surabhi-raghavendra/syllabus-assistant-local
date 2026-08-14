@@ -1,32 +1,20 @@
 # Demo Video
 
-`demo.mp4` needs to be recorded on your own machine, since it requires
-Ollama and Stable Diffusion WebUI actually running and generating real
-output — this can't be produced without a live GPU/local environment.
+The demonstration video shows the complete workflow of the AI-Powered Syllabus Assistant.
 
-## Suggested script (2–3 minutes)
+## Demonstrated Workflow
 
-1. **(15s)** Show the "Local model status" panel confirming both Ollama
-   and Stable Diffusion WebUI are connected.
-2. **(20s)** Upload `data/sample_syllabus.pdf`, click "Process
-   Syllabus", show the success message.
-3. **(30s)** Ask a text-only question, e.g. *"Can I write a makeup exam
-   if I miss a CIA?"* — show the answer and its page citation.
-4. **(45s)** Ask a structural question, e.g. *"What is the grading
-   scheme?"* — show the text answer AND the generated image appearing
-   together in the same turn. This is the key moment to show — it's
-   your project's main differentiator.
-5. **(20s)** Ask *"Who teaches the ethics module?"* — show the assistant
-   correctly saying it can't find that in the syllabus, proving it
-   doesn't hallucinate.
-6. **(10s)** Briefly show the file structure / README in your editor to
-   close out.
+1. Local model status showing Ollama and Stable Diffusion WebUI.
+2. University syllabus PDF upload and processing.
+3. Natural-language question answering using Llama 3 through Ollama.
+4. Retrieval of relevant syllabus content using the RAG pipeline.
+5. Visual generation for structured academic policy questions using Stable Diffusion.
+6. Display of the generated text answer and visual summary together in the Streamlit interface.
 
-## How to record
+## Demo File
 
-- **Windows:** Xbox Game Bar (`Win+G`) or OBS Studio (free)
-- **Mac:** QuickTime Player → File → New Screen Recording
-- **Linux:** OBS Studio or `SimpleScreenRecorder`
+The complete demonstration is available as:
 
-Export as `.mp4`, keep it under ~5 minutes, and place it in this folder
-as `demo.mp4`.
+`demo.mp4`
+
+The video demonstrates that the application performs both text and image generation locally without relying on cloud AI APIs.
