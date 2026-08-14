@@ -75,3 +75,11 @@ For structured academic policy questions, the system also generates a visual sum
 
 ### Additional Application Output
 ![Application Output](docs/screenshots/05_text_answer.png)
+
+## Evaluation
+The project includes an evaluation component for testing syllabus retrieval and answer quality.
+
+```text
+evaluation/
+├── evaluate.py
+└── test_questions.json
