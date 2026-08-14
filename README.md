@@ -17,7 +17,19 @@ For structured academic policy questions, the system also generates a visual sum
 ---
 
 ## Features
+## Technology Stack
 
+| Component | Technology |
+|---|---|
+| Frontend | Streamlit |
+| Programming Language | Python |
+| Document Processing | PyMuPDF |
+| Embeddings | Sentence Transformers |
+| Vector Database | ChromaDB |
+| Local LLM | Llama 3 via Ollama |
+| Image Generation | Stable Diffusion |
+| Image API | AUTOMATIC1111 WebUI API |
+| Retrieval | Retrieval-Augmented Generation (RAG) |
 - Upload and process university syllabus PDFs
 - Semantic search using embeddings and ChromaDB
 - Local Llama 3 text generation through Ollama
