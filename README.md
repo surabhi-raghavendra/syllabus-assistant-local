@@ -84,10 +84,8 @@ The project includes an evaluation component for testing syllabus retrieval and 
 evaluation/
 ├── evaluate.py
 └── test_questions.json
+```
 
-```text
-
-```text
 ## Limitations
 
 - Stable Diffusion generation can be slow on CPU-only systems.
