@@ -31,6 +31,11 @@ For structured academic policy questions, the system also generates a visual sum
 - Streamlit conversational interface
 - Fully local processing with no cloud AI APIs
 
+  ## Architecture
+![System Architecture](docs/architecture.png)
+## Workflow
+![Application Workflow](docs/workflow.png)
+
 ## Technology Stack
 | Component | Technology |
 |---|---|
@@ -70,8 +75,3 @@ For structured academic policy questions, the system also generates a visual sum
 
 ### Additional Application Output
 ![Application Output](docs/screenshots/05_text_answer.png)
-
-## Architecture
-![System Architecture](docs/architecture.png)
-## Workflow
-![Application Workflow](docs/workflow.png)
