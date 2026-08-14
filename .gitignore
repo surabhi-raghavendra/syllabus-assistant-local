@@ -1,16 +1,31 @@
-# Environment / secrets
-.env
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Generated at runtime -- don't commit uploaded PDFs, page images, or the vector DB
-data/*
-!data/.gitkeep
+venv/
+.venv/
+
+.env
+
+data/chroma_store/
+data/page_images/
+
 outputs/*
 !outputs/.gitkeep
-evaluation/results.csv
 
-# OS junk
+.vscode/
+.idea/
+
 .DS_Store
 Thumbs.db
+
+*.tmp
+*.log
+
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+data/sample_syllabus.pdf

@@ -34,6 +34,7 @@ from src.image_gen import (
     should_generate_image,
     build_image_prompt,
     generate_image,
+    create_readable_infographic,
     check_sd_available,
 )
 
@@ -203,16 +204,32 @@ if st.session_state.processed:
                 if result["sources"]:
                     st.caption("Source: " + "; ".join(result["sources"]))
 
-                # Single workflow: the same question that produced the text
+                                # Single workflow: the same question that produced the text
                 # answer also decides whether to generate a visual.
                 if should_generate_image(question):
                     sd_ok, sd_msg = check_sd_available()
                     if sd_ok:
                         with st.spinner("Generating a policy visual with local Stable Diffusion..."):
                             image_prompt = build_image_prompt(question, chunks)
-                            image_path = generate_image(image_prompt, output_dir=OUTPUT_DIR)
+
+                            background_path = generate_image(
+                                image_prompt,
+                                output_dir=OUTPUT_DIR
+                            )
+
+                            if background_path:
+                                image_path = create_readable_infographic(
+                                    background_path=background_path,
+                                    question=question,
+                                    answer=result["answer"],
+                                    output_dir=OUTPUT_DIR
+                                )
+
                         if image_path:
-                            st.image(image_path, caption="Generated policy visual (local Stable Diffusion)")
+                            st.image(
+                                image_path,
+                                caption="Generated policy visual (local Stable Diffusion + local formatting)"
+                            )
                     else:
                         st.caption(f"(Image generation skipped: {sd_msg})")
 
