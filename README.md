@@ -17,19 +17,6 @@ For structured academic policy questions, the system also generates a visual sum
 ---
 
 ## Features
-## Technology Stack
-
-| Component | Technology |
-|---|---|
-| Frontend | Streamlit |
-| Programming Language | Python |
-| Document Processing | PyMuPDF |
-| Embeddings | Sentence Transformers |
-| Vector Database | ChromaDB |
-| Local LLM | Llama 3 via Ollama |
-| Image Generation | Stable Diffusion |
-| Image API | AUTOMATIC1111 WebUI API |
-| Retrieval | Retrieval-Augmented Generation (RAG) |
 - Upload and process university syllabus PDFs
 - Semantic search using embeddings and ChromaDB
 - Local Llama 3 text generation through Ollama
@@ -44,6 +31,29 @@ For structured academic policy questions, the system also generates a visual sum
 - Streamlit conversational interface
 - Fully local processing with no cloud AI APIs
 
+## Technology Stack
+| Component | Technology |
+|---|---|
+| Frontend | Streamlit |
+| Programming Language | Python |
+| Document Processing | PyMuPDF |
+| Embeddings | Sentence Transformers |
+| Vector Database | ChromaDB |
+| Local LLM | Llama 3 via Ollama |
+| Image Generation | Stable Diffusion |
+| Image API | AUTOMATIC1111 WebUI API |
+| Retrieval | Retrieval-Augmented Generation (RAG) |
+
+## How It Works
+1. The student uploads a university syllabus PDF.
+2. The PDF is processed and divided into text chunks.
+3. Embeddings are generated for the extracted syllabus content.
+4. The embeddings are stored in ChromaDB for semantic retrieval.
+5. When the student asks a question, the system retrieves the most relevant syllabus chunks.
+6. The retrieved context is provided to Llama 3 through Ollama.
+7. Llama 3 generates a syllabus-grounded textual answer.
+8. For structured academic policy questions, the application also generates a visual using local Stable Diffusion through AUTOMATIC1111.
+9. The text answer and generated visual are displayed together in the Streamlit interface.
 ---
 
 ## Architecture
